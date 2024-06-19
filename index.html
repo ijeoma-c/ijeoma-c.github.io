@@ -11,49 +11,70 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #ff6f61;
+            background-color: #0066cc;
             color: white;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
         }
         header img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            border: 5px solid #fff;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 2rem auto;
             padding: 2rem;
             background-color: white;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
         }
         .profile-info {
             text-align: center;
+            margin-bottom: 2rem;
         }
         .profile-info h1 {
             margin-top: 0.5rem;
+            font-size: 2.5rem;
+        }
+        .profile-info p {
+            font-size: 1.2rem;
+            color: #666;
         }
         .section {
             margin: 2rem 0;
         }
         .section h2 {
             margin-bottom: 1rem;
-            color: #ff6f61;
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 0.5rem;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #e7f3ff;
+            border: 1px solid #cce1ff;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
         }
         .contact-info {
             text-align: center;
+            margin-top: 2rem;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 2rem;
         }
     </style>
 </head>
@@ -81,7 +102,18 @@
         </div>
         <div class="section">
             <h2>Skills</h2>
-            <p>OWASP, Wireshark</p>
+            <div class="skills">
+                <div class="skill">Customer Relationship Management</div>
+                <div class="skill">Technical Support</div>
+                <div class="skill">Problem Solving</div>
+                <div class="skill">Project Management</div>
+                <div class="skill">Communication</div>
+                <div class="skill">Network Troubleshooting</div>
+                <div class="skill">OWASP</div>
+                <div class="skill">Wireshark</div>
+                <div class="skill">Azure</div>
+                <div class="skill">AWS</div>
+            </div>
         </div>
         <div class="section">
             <h2>Education</h2>
@@ -98,3 +130,4 @@
     </footer>
 </body>
 </html>
+
